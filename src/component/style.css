@@ -1,0 +1,114 @@
+.form-wrapper {
+    width: 500px;
+    text-align: left;
+    padding: 30px;
+}
+
+.radio-input {
+    display: inline-block;
+    text-align: center;
+    margin: 0px 10px 0px 0;
+    padding: 0px;
+    line-height: 10px;
+}
+
+.flex-css {
+    display: flex;
+    align-items: center;
+}
+
+.flex-css label {
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+.form-wrapper ul span {
+    color: #006da3;
+    font-weight: 500;
+}
+
+.error{
+    color: red;
+}
+
+/* ============================================================ */
+/*Step bar css*/
+
+.progressbar li {
+    list-style: none;
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 4px solid #ddd;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ababab;
+}
+
+.progressbar li:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    line-height: 7px;
+    border: 8px solid #ddd;
+    border-radius: 100%;
+    display: block;
+    text-align: center;
+    margin: -10px auto -60px auto;
+    background-color: #fff;
+}
+
+.progressbar li.active, .progressbar li.complete {
+    color: #02e2db;
+    border-color: #02e2db;
+}
+
+.progressbar li.active:before {
+    border-color: #02e2db;
+    border: 8px solid #02e2db;
+    width: 8px;
+    height: 8px;
+}
+.progressbar li.complete:before {
+    border-color: transparent;
+    border: 5px solid transparent;
+    width: 14px;
+    height: 14px;
+    content: "\2713";
+    background: #02e2db;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    content: "\2713";
+    font-size: 18px;
+}
+
+.progressbar li.active+li:after {
+    background-color: #02e2db;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+tr:nth-child(even){background-color: #f2f2f2;}
+  
+tr:hover {background-color: #ddd;}
+  
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #7e7e7e;
+    color: white;
+  }
+  table{
+    margin-bottom: 30px;
+  }
